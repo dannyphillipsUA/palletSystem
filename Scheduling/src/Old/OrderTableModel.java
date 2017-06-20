@@ -1,8 +1,11 @@
+package Old;
 import java.awt.Font;
 import java.sql.Date;
 import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
+
+import New.Order;
 
 public class OrderTableModel extends AbstractTableModel {
 

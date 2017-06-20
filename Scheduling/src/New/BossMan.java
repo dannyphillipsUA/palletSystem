@@ -1,3 +1,4 @@
+package New;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.io.IOException;
@@ -16,6 +17,7 @@ import java.awt.Font;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
+
 import java.awt.GridLayout;
 
 public class BossMan extends JFrame{

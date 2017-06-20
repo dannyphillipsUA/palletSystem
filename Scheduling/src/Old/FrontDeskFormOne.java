@@ -1,3 +1,4 @@
+package Old;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.WindowAdapter;
@@ -22,6 +23,9 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.border.LineBorder;
 import javax.swing.table.AbstractTableModel;
+
+import New.Item;
+import New.Order;
 
 public class FrontDeskFormOne extends JFrame{
 
