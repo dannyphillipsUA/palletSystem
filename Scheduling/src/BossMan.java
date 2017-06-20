@@ -20,15 +20,15 @@ import java.awt.GridLayout;
 
 public class BossMan extends JFrame{
 	public BossMan() {
-		getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		jp.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JButton btnUpdate = new JButton("Update");
 		btnUpdate.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		getContentPane().add(btnUpdate);
+		jp.add(btnUpdate);
 		
 		JLabel lblOrdersNotScheduled = DefaultComponentFactory.getInstance().createLabel("Orders not scheduled");
 		lblOrdersNotScheduled.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		getContentPane().add(lblOrdersNotScheduled);
+		jp.add(lblOrdersNotScheduled);
 		
 		DefaultTableModel tableModel = new DefaultTableModel(5, 0);
 		table_1 = new JTable(tableModel);
@@ -55,17 +55,17 @@ public class BossMan extends JFrame{
 		fillTable(table_1);
 		
 		table_1.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		getContentPane().add(table_1);
+		jp.add(table_1);
 		
 		JLabel label = new JLabel("");
-		getContentPane().add(label);
+		jp.add(label);
 		
 		JLabel lblOrdersScheduled = DefaultComponentFactory.getInstance().createLabel("Orders Scheduled");
 		lblOrdersScheduled.setFont(new Font("Times New Roman", Font.PLAIN, 17));
-		getContentPane().add(lblOrdersScheduled);
+		jp.add(lblOrdersScheduled);
 		
 		JLabel label_1 = new JLabel("");
-		getContentPane().add(label_1);
+		jp.add(label_1);
 		
 		table_2 = new JTable();
 		table_2.setBorder(new LineBorder(new Color(0, 0, 0)));
@@ -80,10 +80,10 @@ public class BossMan extends JFrame{
 				"New column", "New column", "New column", "New column", "New column"
 			}
 		));
-		getContentPane().add(table_2);
+		jp.add(table_2);
 		
 		JLabel label_2 = new JLabel("");
-		getContentPane().add(label_2);
+		jp.add(label_2);
 	}
 
 	private static FrontDesk desk = new FrontDesk();
@@ -93,8 +93,10 @@ public class BossMan extends JFrame{
 	private static JLabel Title = new JLabel("Orders");
 	private static JButton update = new JButton();
 	private static JFrame jf = new JFrame();
-	private JTable table_1;
+	private static JTable table_1;
 	private JTable table_2;
+	private BossMan bs = new BossMan();
+	
 	/**
 	 * @wbp.nonvisual location=73,14
 	 */
@@ -105,10 +107,12 @@ public class BossMan extends JFrame{
 		desk.run();
 		orders = desk.getOrders();
 
-		fillTable(jt);
+		table_1 = fillTable(table_1);
+		
+		jp.setVisible(true);
 	}
 
-	private static void fillTable(JTable table1) {
+	private static JTable fillTable(JTable table1) {
 
 		DefaultTableModel tableModel = new DefaultTableModel(5, 0);
 		table1 = new JTable(tableModel);
@@ -124,6 +128,7 @@ public class BossMan extends JFrame{
 
 			tableModel.addRow(data);
 		}
+		return table1;
 		
 	}
 
