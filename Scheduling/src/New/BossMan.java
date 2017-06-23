@@ -86,6 +86,10 @@ public class BossMan extends JFrame{
 		
 		JLabel label_2 = new JLabel("");
 		jp.add(label_2);
+		
+		jf.add(jp);
+		jf.add(table_1);
+		jf.add(table_2);
 	}
 
 	private static FrontDesk desk = new FrontDesk();
@@ -111,7 +115,7 @@ public class BossMan extends JFrame{
 
 		table_1 = fillTable(table_1);
 		
-		jp.setVisible(true);
+		jf.setVisible(true);
 	}
 
 	private static JTable fillTable(JTable table1) {

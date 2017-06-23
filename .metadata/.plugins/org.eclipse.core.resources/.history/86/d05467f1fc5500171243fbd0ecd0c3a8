@@ -1,0 +1,117 @@
+package New;
+
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+
+public class BuildSheet extends JFrame{
+	private JTextField textField;
+	private JTextField textField_1;
+	public BuildSheet() {
+		getContentPane().setLayout(null);
+		
+		JLabel lblCompany = new JLabel("Company");
+		lblCompany.setBounds(12, 8, 70, 22);
+		lblCompany.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblCompany);
+		
+		textField = new JTextField();
+		textField.setBounds(87, 5, 146, 28);
+		textField.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblSize = new JLabel("Size");
+		lblSize.setBounds(238, 8, 30, 22);
+		lblSize.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblSize);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(273, 5, 146, 28);
+		textField_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		JLabel lblSize_1 = new JLabel("Size");
+		lblSize_1.setBounds(22, 41, 30, 22);
+		lblSize_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblSize_1);
+		
+		JLabel lblLength = new JLabel("Length");
+		lblLength.setBounds(97, 41, 50, 22);
+		lblLength.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblLength);
+		
+		JLabel lblAmount = new JLabel("Amount");
+		lblAmount.setBounds(195, 41, 58, 22);
+		lblAmount.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblAmount);
+		
+		JLabel lblNew = new JLabel("New");
+		lblNew.setBounds(283, 41, 34, 22);
+		lblNew.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblNew);
+		
+		JLabel lblRecycle = new JLabel("Recycle");
+		lblRecycle.setBounds(345, 41, 57, 22);
+		lblRecycle.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		getContentPane().add(lblRecycle);
+		
+		JLabel lblX = new JLabel("2 x 4");
+		lblX.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblX.setBounds(12, 70, 46, 14);
+		getContentPane().add(lblX);
+		
+		JLabel label = new JLabel("2 x 4");
+		label.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label.setBounds(12, 95, 46, 14);
+		getContentPane().add(label);
+		
+		JLabel lblx = new JLabel("4 x 4");
+		lblx.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblx.setBounds(12, 120, 46, 14);
+		getContentPane().add(lblx);
+		
+		JLabel lblx_1 = new JLabel("1 x 4");
+		lblx_1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblx_1.setBounds(12, 145, 46, 14);
+		getContentPane().add(lblx_1);
+		
+		JLabel label_1 = new JLabel("1 x 4");
+		label_1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label_1.setBounds(12, 160, 46, 14);
+		getContentPane().add(label_1);
+		
+		JLabel label_2 = new JLabel("1 x 4");
+		label_2.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label_2.setBounds(12, 175, 46, 14);
+		getContentPane().add(label_2);
+		
+		JLabel lblX_1 = new JLabel("2 x 6");
+		lblX_1.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblX_1.setBounds(12, 190, 46, 14);
+		getContentPane().add(lblX_1);
+		
+		JLabel label_3 = new JLabel("2 x 6");
+		label_3.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label_3.setBounds(12, 205, 46, 14);
+		getContentPane().add(label_3);
+		
+		JLabel lblX_2 = new JLabel("1 x 6");
+		lblX_2.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		lblX_2.setBounds(12, 220, 46, 14);
+		getContentPane().add(lblX_2);
+		
+		JLabel label_4 = new JLabel("1 x 6");
+		label_4.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label_4.setBounds(12, 235, 46, 14);
+		getContentPane().add(label_4);
+		
+		JLabel label_5 = new JLabel("1 x 6");
+		label_5.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+		label_5.setBounds(12, 250, 46, 14);
+		getContentPane().add(label_5);
+	}
+}

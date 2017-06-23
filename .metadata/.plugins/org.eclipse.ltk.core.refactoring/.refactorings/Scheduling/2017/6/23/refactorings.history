@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;employeeList&apos; in &apos;FrontDeskFormOne.FrontDeskFormOne()&apos; to &apos;orders&apos;&#x0D;&#x0A;- Original project: &apos;Scheduling&apos;&#x0D;&#x0A;- Original element: &apos;FrontDeskFormOne.FrontDeskFormOne().employeeList&apos;&#x0D;&#x0A;- Renamed element: &apos;employeeList&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;employeeList&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{FrontDeskFormOne.java[FrontDeskFormOne~FrontDeskFormOne@employeeList!7213!7262!7225!7236!QList\&lt;QOrder;&gt;;!0!false" name="orders" references="true" stamp="1496860334711" version="1.0"/>
+</session>

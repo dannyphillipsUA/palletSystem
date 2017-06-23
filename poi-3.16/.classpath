@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="osgi/src/main/java"/>
+	<classpathentry kind="src" path="osgi/src/test/java"/>
+	<classpathentry kind="src" path="src/contrib/poi-ruby/java"/>
+	<classpathentry kind="src" path="src/examples/src"/>
+	<classpathentry kind="src" path="src/excelant/java"/>
+	<classpathentry kind="src" path="src/excelant/testcases"/>
+	<classpathentry kind="src" path="src/integrationtest"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/ooxml/java"/>
+	<classpathentry kind="src" path="src/ooxml/testcases"/>
+	<classpathentry kind="src" path="src/scratchpad/src"/>
+	<classpathentry kind="src" path="src/scratchpad/testcases"/>
+	<classpathentry kind="src" path="src/testcases"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

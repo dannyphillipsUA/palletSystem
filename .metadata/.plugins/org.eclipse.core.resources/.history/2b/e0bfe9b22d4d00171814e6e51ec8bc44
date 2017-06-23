@@ -1,0 +1,47 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class BossMan {
+
+	private FrontDesk desk;
+	private ArrayList<Order> orders;
+	private JPanel jp = new JPanel();
+	private JTable jt = new JTable();
+	private JLabel Title = new JLabel("Orders");
+
+	public void main(String[] args) throws IOException {
+
+		desk.run();
+		orders = desk.getOrders();
+
+		display();
+	}
+
+	private void display() {
+
+		String[] columnNames = { "Scheduling", "Customer", "Item", "Quantity", "Due Date" };
+		DefaultTableModel tableModel = new DefaultTableModel(5, 0);
+		JTable table = new JTable(tableModel);
+
+		for (int i = 0; i < orders.size(); i++) {
+			boolean scheduling = false;
+			String customer = orders.get(i).getCustomer();
+			String item = orders.get(i).getItem();
+			int quantity = orders.get(i).getQuantity();
+			Date due = orders.get(i).getDueDate();
+
+			Object[] data = { scheduling, customer, item, quantity, due };
+
+			tableModel.addRow(data);
+		}
+
+		jt = table;
+	}
+
+}
