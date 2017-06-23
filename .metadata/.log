@@ -1216,3 +1216,9 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-06-23 09:38:16.589
+!MESSAGE No repository found at https://archive.apache.org/dist/poi/release/src/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-06-23 09:39:02.130
+!MESSAGE No repository found at file:/D:/Work/poi-3.16/.
